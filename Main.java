@@ -71,10 +71,11 @@ public class Main {
 
         String day;
         while (day != "exit"){
+            
             Scanner input = new Scanner(System.in);
             system.out.println("What day is it?(Type "exit" to exit)")
             day input.nextLine();
-            input
+            
         }
         */
     }
