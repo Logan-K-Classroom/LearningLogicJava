@@ -1,4 +1,7 @@
+import java.util.ArrayList;
+
 class Main{
+
     public static void main(String[] args) {
        
         Student student0 = new Student("Jun Brewer", 00, 18, 100);
@@ -13,18 +16,20 @@ class Main{
 
         System.out.println(student1.getStudentName());
 
-        Student[] students = new Student[5];
-        students[0] = new Student("Jun Brewer", 00, 18, 6.66);
-        students[1] = new Student("Miles Poland", 01, 15, 4.14);
-        students[2] = new Student("Oliver Elliott", 02, 15, 9001.01);
-        students[3] = new Student("Kaleb Thompson", 03,15,3.56);      
-        students[4] = new Student("Logan Kessler", 04, 17, 3.83);
+        ArrayList<Student> students = new ArrayList<Student>();
         
-        for (int i = 0; i < students.length; i++) { 
-        System.out.println(students[i].getStudentName());
+        students.add(new Student("Jun Brewer", 00, 18, 6.66));
+        students.add(new Student("Miles Poland", 01, 15, 4.14));
+        students.add(new Student("Oliver Elliott", 02, 15, 9001.01));
+        students.add(new Student("Kaleb Thompson", 03,15,3.56));      
+        students.add(new Student("Logan Kessler", 04, 17, 3.83));
+        
+        for (int i = 0; i < students.size(); i++) { 
+        System.out.println(students.get(i).getStudentName());
         }
 
        
               
     }
 }
+//
