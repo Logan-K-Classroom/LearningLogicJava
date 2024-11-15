@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 class Main{
 
@@ -14,22 +15,30 @@ class Main{
 
         //System.out.println(student1.studentName);
 
-        System.out.println(student1.getStudentName());
+        // ArrayList<Student> students = new ArrayList<Student>();
+        
+        // students.add(new Student("Jun Brewer", 00, 18, 6.66));
+        // students.add(new Student("Miles Poland", 01, 15, 4.14));
+        // students.add(new Student("Oliver Elliott", 02, 15, 9001.01));
+        // students.add(new Student("Kaleb Thompson", 03,15,3.56));      
+        // students.add(new Student("Logan Kessler", 04, 17, 3.83));
+        
+        // for (int i = 0; i < students.size(); i++) { 
+        // System.out.println(students.get(i).getStudentName());
+        // }
 
-        ArrayList<Student> students = new ArrayList<Student>();
         
-        students.add(new Student("Jun Brewer", 00, 18, 6.66));
-        students.add(new Student("Miles Poland", 01, 15, 4.14));
-        students.add(new Student("Oliver Elliott", 02, 15, 9001.01));
-        students.add(new Student("Kaleb Thompson", 03,15,3.56));      
-        students.add(new Student("Logan Kessler", 04, 17, 3.83));
-        
-        for (int i = 0; i < students.size(); i++) { 
-        System.out.println(students.get(i).getStudentName());
+       
+        HashMap<String, Student> students = new HashMap<String, Student>();
+
+        students.put("Jun", new Student("Jun Brewer", 00, 18, 4.00));
+        students.put("Logan", new Student("Pussy Logan", 01, 17, -4.00));
+        for (Student i: students.values()) {
+            System.out.println(i.getStudentName());
         }
-
        
               
     }
 }
-//
+
+//feed me
