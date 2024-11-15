@@ -1,82 +1,30 @@
-import java.util.Scanner;
-public class Main {
-    public static void main(String[] args){
+class Main{
+    public static void main(String[] args) {
+       
+        Student student0 = new Student("Jun Brewer", 00, 18, 100);
+        Student student1 = new Student("Logan Kessler", 01, 17, 100.5);
+        Student student2 = new Student("Oliver Elliott", 02, 15, 9001.01);
+        Student student3 = new Student("Kaleb Thompson", 03, 15, 3.56);
+        Student student4 = new Student("Miles Poland", 04, 15, 4.14);
         
-        Scanner input = new Scanner(System.in);
-        while (true) {
-        System.out.println("What day is it?(type exit to exit)");    
-        
-        String day;
-        day = input.nextLine();
-        
-        if (day.equals("exit")){
-            System.out.println(day);
-            break;
-        }
-        
-        
-        }
-        System.out.println("we got here");
-    
-        //String currentUser = "Logan";
+        //student1.studentName = "Jun Brewer";
 
-        //boolean presidentAlive = true;
-        //boolean vicePresidentAlive = true;
-        //boolean speakerHouseAlive = false;
-        
-        // String day;
-        // Scanner input = new Scanner(System.in); 
-        // System.out.println("What day is it?");
-        // String day = input.nextLine();
-        // input.close();
-        /* 
-        switch(day){
-            case "Monday":
-                System.out.println("Today is Monday");
-                break;
-            case "Tuesday":
-                System.out.println("Today is Tuesday");
-                break;
-            case "Wednesday":
-                System.out.println("Today is Wednesday");
-                break;
-            case "Thursday":
-                System.out.println("Today is Thursday"); //Fixed itdt
-                break;
-            case "Friday":
-                System.out.println("Today is Friday");   // Siri, don't play any songs by Rebecca Black, or whatever her name was I forgot
-                break;
-            case "Saturday":
-                System.out.println("Today is Saturday");
-                break;
-            case "Sunday":
-                System.out.println("Today is Sunday");
-                break;
-            default:
-                System.out.println("That's not a day");
-                break;
-        }
-        
-        // if(currentUser == "Logan" && !isHappy){
-        //     System.out.println("Take your pills💊.");
-        // }
-        
-        // if(currentUser == "Logan" && age > 18){
-        //     System.out.println("You finally remembered?🧠");
-        // }
-        
-        // if(currentUser == "Jun" || currentUser == "Logan"){
-        //     System.out.println("Hello authorized user 👤👋");
-        //}
+        //System.out.println(student1.studentName);
 
-        String day;
-        while (day != "exit"){
-            
-            Scanner input = new Scanner(System.in);
-            system.out.println("What day is it?(Type "exit" to exit)")
-            day input.nextLine();
-            
+        System.out.println(student1.getStudentName());
+
+        Student[] students = new Student[5];
+        students[0] = new Student("Jun Brewer", 00, 18, 6.66);
+        students[1] = new Student("Miles Poland", 01, 15, 4.14);
+        students[2] = new Student("Oliver Elliott", 02, 15, 9001.01);
+        students[3] = new Student("Kaleb Thompson", 03,15,3.56);      
+        students[4] = new Student("Logan Kessler", 04, 17, 3.83);
+        
+        for (int i = 0; i < students.length; i++) { 
+        System.out.println(students[i].getStudentName());
         }
-        */
+
+       
+              
     }
-}  
+}
